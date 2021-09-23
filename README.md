@@ -9,6 +9,7 @@ head : prints only the first 10 lines of the piped output.
 
 ### Linux find largest files and/or directories recursively
 `du -a  | sort -n -r | head -n 50`
+
 Finds largest files and directories and lists largest 50, sorted on size.
 
 ### find string of text in all files
