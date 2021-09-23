@@ -12,5 +12,8 @@ head : prints only the first 10 lines of the piped output.
 
 Finds largest files and directories and lists largest 50, sorted on size.
 
+### Linux find files recursively larger than XXX 
+`find . -type f -size +10M`
+
 ### find string of text in all files
 `grep -rnw '/path/to/somewhere/' -e "pattern"`
