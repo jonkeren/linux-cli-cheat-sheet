@@ -17,3 +17,7 @@ Finds largest files and directories and lists largest 50, sorted on size.
 
 ### find string of text in all files
 `grep -rnw '/path/to/somewhere/' -e "pattern"`
+
+### Start Logrotate on Hypernode servers
+`/usr/sbin/logrotate -v /data/web/hypernode_logrotate.conf --state /data/web/.logrot_state`
+
