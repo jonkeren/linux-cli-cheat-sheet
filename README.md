@@ -36,7 +36,7 @@ Explanation:
 
 `--directory-prefix=~/warmertmp` ensures that temporary files will end up in that temp dir.
 
-`--no-directories` will ensure no empty directories are left out after running our minimalistic crawler
+`--no-directories` will ensure no empty directories are left out after running
 
 Optional: `--quiet` is just a good way to silence any output to avoid cron email being sent.
 
