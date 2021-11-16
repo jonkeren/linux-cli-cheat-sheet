@@ -22,11 +22,13 @@ Finds largest files and directories and lists largest 50, sorted on size.
 `/usr/sbin/logrotate -v /data/web/hypernode_logrotate.conf --state /data/web/.logrot_state`
 
 ### One-line cache warmer :)
-Make one directory in home dir using `mkdir ~/warmertmp`.
-Then run command:
+1. Make one directory in home dir using `mkdir ~/warmertmp`.
+2. Then run command:
 `wget --directory-prefix=~/warmertmp --spider --recursive --no-directories https://www.DOMAINNAME.nl`
+
 You can also set this up in a cron job if you want.
 
+Explanation:
 
 `--recursive` will force wget to crawl the website recursively.
 
