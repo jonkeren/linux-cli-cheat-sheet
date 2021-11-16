@@ -27,7 +27,7 @@ Finds largest files and directories and lists largest 50, sorted on size.
 ### One-line cache warmer :)
 1. Make one directory in home dir using `mkdir ~/warmertmp`.
 2. Then run command:
-`wget --directory-prefix=~/warmertmp --spider --recursive --no-directories https://www.DOMAINNAME.nl`
+`wget --directory-prefix=~/warmertmp --reject-regex "(.*)\?(.*)" --spider --recursive --no-directories https://www.DOMAINNAME.nl`
 
 You can also set this up in a cron job if you want.
 
@@ -40,6 +40,8 @@ Explanation:
 `--directory-prefix=~/warmertmp` ensures that temporary files will end up in that temp dir.
 
 `--no-directories` will ensure no empty directories are left out after running
+
+`--reject-regex "(.*)\?(.*)"` This will fetch all pages, BUT will disregard everything after the ? -- so good for layered navigation, for example
 
 Optional: `--quiet` is just a good way to silence any output to avoid cron email being sent.
 
