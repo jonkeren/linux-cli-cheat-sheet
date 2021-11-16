@@ -27,8 +27,14 @@ Then run command:
 `wget --directory-prefix=~/warmertmp --spider --recursive --no-directories https://www.DOMAINNAME.nl`
 You can also set this up in a cron job if you want.
 
+
 `--recursive` will force wget to crawl the website recursively.
+
 `--spider` is for "not downloading anything". However, this directive results in files created and deleted. Thus the following is useful:
+
 `--directory-prefix=~/warmertmp` ensures that temporary files will end up in that temp dir.
+
 `--no-directories` will ensure no empty directories are left out after running our minimalistic crawler
+
 Optional: `--quiet` is just a good way to silence any output to avoid cron email being sent.
+
