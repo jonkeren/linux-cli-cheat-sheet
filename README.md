@@ -24,8 +24,8 @@ Finds largest files and directories and lists largest 50, sorted on size.
 ### Simpler display of only bytes used and bytes free in Varnish (with varnishstat)
 `varnishstat -f SMA.s0.g_bytes -f SMA.s0.g_space`
 
-### One-line cache warmer :)
-1. Make one directory in home dir using `mkdir ~/warmertmp`.
+### One-line cache warmer using wget
+1. Create one directory in home dir using `mkdir ~/warmertmp`.
 2. Then run command:
 `wget --directory-prefix=~/warmertmp --reject jpg,png --reject-regex "(.*)\?(.*)" --spider --recursive --no-directories https://www.DOMAINNAME.nl`
 
