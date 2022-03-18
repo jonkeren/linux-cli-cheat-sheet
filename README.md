@@ -24,6 +24,9 @@ Finds largest files and directories and lists largest 50, sorted on size.
 ### Simpler display of only bytes used and bytes free in Varnish (with varnishstat)
 `varnishstat -f SMA.s0.g_bytes -f SMA.s0.g_space`
 
+### Send e-mail from command line CLI including setting from: header and bodytext
+`mail -a From:webshop@zusenzoosvollenhove.nl -s 'Mail test Jos 2' test-51gf3r1l2@srv1.mail-tester.com <<< 'Dit is het bericht. Over en sluiten.'`
+
 ### One-line cache warmer using wget
 1. Create one directory in home dir using `mkdir ~/warmertmp`.
 2. Then run command:
