@@ -25,7 +25,7 @@ Finds largest files and directories and lists largest 50, sorted on size.
 `varnishstat -f SMA.s0.g_bytes -f SMA.s0.g_space`
 
 ### Send e-mail from command line CLI including setting from: header and bodytext
-`mail -a From:webshop@zusenzoosvollenhove.nl -s 'Mail test Jos 2' test-51gf3r1l2@srv1.mail-tester.com <<< 'Dit is het bericht. Over en sluiten.'`
+`mail -a From:MAIL@ADDRESS.NL -s 'Mail Testing lalala' TO@ADDRESS.NL <<< 'Dit is het bericht. Over en sluiten.'`
 
 ### One-line cache warmer using wget
 1. Create one directory in home dir using `mkdir ~/warmertmp`.
