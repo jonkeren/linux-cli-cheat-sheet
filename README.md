@@ -27,6 +27,9 @@ Finds largest files and directories and lists largest 50, sorted on size.
 ### Send e-mail from command line CLI including setting from: header and bodytext
 `mail -a From:MAIL@ADDRESS.NL -s 'Mail Testing lalala' TO@ADDRESS.NL <<< 'Dit is het bericht. Over en sluiten.'`
 
+### Tar complete directory, recursive, including hidden files, while preserving file permissions
+`tar -cvpzf FILENAME.tgz . `
+
 ### One-line cache warmer using wget
 1. Create one directory in home dir using `mkdir ~/warmertmp`.
 2. Then run command:
