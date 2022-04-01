@@ -24,6 +24,12 @@ Finds largest files and directories and lists largest 50, sorted on size.
 ### Simpler display of only bytes used and bytes free in Varnish (with varnishstat)
 `varnishstat -f SMA.s0.g_bytes -f SMA.s0.g_space`
 
+### Varnish show updating list of top MISSes
+`varnishtop -i BereqURL`
+
+### Varnish show updating list of all requests
+`varnishtop -i ReqURL`
+
 ### Send e-mail from command line CLI including setting from: header and bodytext
 `mail -a From:MAIL@ADDRESS.NL -s 'Mail Testing lalala' TO@ADDRESS.NL <<< 'Dit is het bericht. Over en sluiten.'`
 
