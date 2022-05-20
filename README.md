@@ -1,6 +1,9 @@
 # linux-cli-cheat-sheet
 My personal clipboard of handy commands that I use frequently.
 
+### Disk space usage analyser
+`ncdu`
+
 ### Linux find largest files
 `find . -xdev -type f -size +100M -print | xargs ls -lh | sort -k5,5 -h -r | head`
 
