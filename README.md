@@ -42,7 +42,7 @@ Finds largest files and directories and lists largest 50, sorted on size.
 ### One-line cache warmer using wget
 1. Create one directory in home dir using `mkdir ~/warmertmp`.
 2. Then run command:
-`wget --directory-prefix=~/warmertmp --reject jpg,png --reject-regex "(.*)\?(.*)" --spider --recursive --no-directories https://www.DOMAINNAME.nl`
+`wget -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" --directory-prefix=~/warmertmp --reject jpg,png --reject-regex "(.*)\?(.*)" --spider --recursive --no-directories https://www.DOMAINNAME.nl`
 
 You can also set this up in a cron job if you want.
 
