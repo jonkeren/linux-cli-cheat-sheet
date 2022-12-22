@@ -33,6 +33,9 @@ Finds largest files and directories and lists largest 50, sorted on size.
 ### Varnish show updating list of all requests
 `varnishtop -i ReqURL`
 
+### Varnish monitor purge requests
+`varnishlog -g request -q 'ReqMethod eq "PURGE"'`
+
 ### Send e-mail from command line CLI including setting from: header and bodytext
 `mail -a From:MAIL@ADDRESS.NL -s 'Mail Testing lalala' TO@ADDRESS.NL <<< 'Dit is het bericht. Over en sluiten.'`
 
