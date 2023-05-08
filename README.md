@@ -6,7 +6,7 @@ My personal clipboard of handy commands that I use frequently.
 ```
 SRC=Old Text here
 DST=New Text here
-find . *.php -type f -print0 | xargs -0 sed -i '/ipsum/s,$SRC,$DST,g'
+find . *.php -type f -print0 | xargs -0 sed -i "/ipsum/s,$SRC,$DST,g"
 ```
 (/ipsum/ selects lines containing "ipsum" and only on these lines the command(s) that follow are executed.)
 
