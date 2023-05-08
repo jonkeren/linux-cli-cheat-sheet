@@ -1,6 +1,14 @@
 # linux-cli-cheat-sheet
 My personal clipboard of handy commands that I use frequently.
 
+
+### Easy format to search/replace text strings in many files using sed
+```
+SRC="Text here"
+DST="Text here"
+find . *.php -type f -print0 | xargs -0 sed -i "s/$SRC/$DST/g"
+```
+
 ### Disk space usage analyser
 `ncdu`
 
