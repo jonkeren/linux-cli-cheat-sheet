@@ -6,8 +6,9 @@ My personal clipboard of handy commands that I use frequently.
 ```
 SRC="Text here"
 DST="Text here"
-find . *.php -type f -print0 | xargs -0 sed -i "s/$SRC/$DST/g"
+find . *.php -type f -print0 | xargs -0 sed -i "/ipsum/s/$SRC/$DST/g"
 ```
+(/ipsum/ selects lines containing "ipsum" and only on these lines the command(s) that follow are executed.)
 
 ### Disk space usage analyser
 `ncdu`
