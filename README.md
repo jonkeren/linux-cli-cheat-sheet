@@ -1,6 +1,11 @@
 # linux-cli-cheat-sheet
-My personal clipboard of handy commands that I use frequently.
+My personal clipboard of handy commands that I use frequently and that I tend to forget.
 
+### tmux (very) basic use
+- Start new session: just `tmux`
+- Detach: ctrl+b, d
+- List current: `tmux ls`
+- Attach: `tmux attach-session -t 0`
 
 ### Easy format to search/replace text strings in many files using sed
 ```
@@ -50,6 +55,12 @@ Finds largest files and directories and lists largest 50, sorted on size.
 
 ### Tar complete directory, recursive, including hidden files, while preserving file permissions
 `tar -cvpzf FILENAME.tgz . `
+
+### Auto-archive all pages in a sitemap to the Internet Archive's Wayback Machine (archive.org)
+Install globally using `npm install --global wayback-sitemap-archive`
+
+then run using: `wsa <SITEMAP_URL>`
+
 
 ### One-line cache warmer using wget
 1. Create one directory in home dir using `mkdir ~/warmertmp`.
