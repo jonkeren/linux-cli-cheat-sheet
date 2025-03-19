@@ -1,6 +1,15 @@
 # linux-cli-cheat-sheet
 My personal clipboard of handy commands that I use frequently and that I tend to forget.
 
+### Install btop (latest version) quickly
+btop is a great terminal based system monitor. It is a fine way to quickly get a thorough picture of the system’s status in the terminal. It's htop+++.
+```
+mkdir -p btop-install/output
+wget -qO - https://github.com/aristocratos/btop/releases/latest/download/btop-x86_64-linux-musl.tbz | tar -xj -C btop-install/output
+(cd btop-install/output/btop && sudo make install && sudo make setuid)
+rm -rf btop-install
+```
+
 ### tmux (very) basic use
 - Start new session: just `tmux`
 - Detach: ctrl+b, d
